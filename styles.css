@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.container--top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    padding: 60px 10px;
+}
+
+.container--top h2{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.container--top-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.container--top-info p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 80vw;
+}
+
+/** container images **/
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 90px;
+}
+
+figure {
+    width: 155px;
+    position: relative;
+    padding: 7px 0px;
+}
+
+figure aside {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    writing-mode: vertical-rl;  
+    right: 0;  
+}
+
+.container figure:nth-child(2n){
+    margin-top: 50px;
+}
+
+/*.container figure:nth-child(3n+1){    3n+2
+}*/
+
+.container--img {
+    width: 138px;  /*238px;*/ 
+    height: 209px; /*341px;*/
+}
+
+.container figcaption {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/** footer **/
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    color: #A9A9A9;
+    padding: 10px;
+}
+
+footer a {
+    color: #A9A9A9;
+    text-decoration: underline;
+}
+
+@media (min-width: 463px) {
+    body {
+        padding: 1vh 4vw;
+    }
+    .container figure:nth-child(2n){
+        margin-top: 0;
+    }
+
+    .container figure:nth-child(3n+2){
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 646px) {
+    body {
+        padding: 1vh 10vw;
+    }
+    .container figure:nth-child(2n){
+        margin-top: 0;
+    }
+
+    .container figure:nth-child(3n+2){
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    body {
+        padding: 2vh 19vw;
+        padding-bottom: 1vh;
+    }
+    .container--top {
+        flex-direction: row;
+        /*padding: 12vh 10vw;*/
+    }
+
+    .container--top h2 {
+        width: 40vw;
+    }
+
+    .container .container--top-info {
+        width: 40vw;
+    }
+    
+    .container--top-info p {
+        font-weight: 400;
+        font-size: 18px;
+        width: 30vw;
+    }
+
+    /** container images **/
+
+    .container {
+        flex-wrap: wrap;
+        padding: 0;
+        padding-bottom: 90px;
+    }
+    
+    figure {
+        width: 204px;
+        position: relative;
+        padding: 7px 0px;
+    }
+    
+    figure aside {
+        font-size: 12px; 
+    }
+
+    .container figure:nth-child(2n){
+        margin-top: 0;
+    }
+
+    .container figure:nth-child(3n+2){
+        margin-top: 50px;
+    }
+
+    .container--img {
+        /*width: 238px;
+        height: 341px;*/
+        width: 185px;
+        height: 274px;
+    }
+    
+    .container figcaption {
+        font-size: 18px;
+    }
+}
